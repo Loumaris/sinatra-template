@@ -5,7 +5,7 @@ A simple template for sinatra projects
 
 ## Environment
 * Ruby 2.6.5
-* Sinatra 2.0.5
+* Sinatra 2.0.8.1
 * MDBootstrap
 * slim
 
