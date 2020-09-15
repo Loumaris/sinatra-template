@@ -4,7 +4,7 @@
 A simple template for sinatra projects
 
 ## Environment
-* Ruby 2.6.5
+* Ruby 2.6.6
 * Sinatra 2.1.0
 * MDBootstrap 4.19.1
 * slim
@@ -27,9 +27,9 @@ $ bundle install
 ```
 $ bundle exec rackup config.ru -p 4567
 
-[2020-03-03 21:07:09] INFO  WEBrick 1.4.2
-[2020-03-03 21:07:09] INFO  ruby 2.6.5 (2019-10-01) [x86_64-linux]
-[2020-03-03 21:07:09] INFO  WEBrick::HTTPServer#start: pid=19892 port=4567
+[2020-09-15 08:22:52] INFO  WEBrick 1.4.2
+[2020-09-15 08:22:52] INFO  ruby 2.6.6 (2020-03-31) [x86_64-linux]
+[2020-09-15 08:22:52] INFO  WEBrick::HTTPServer#start: pid=30080 port=4567
 ```
 
 ### with docker
