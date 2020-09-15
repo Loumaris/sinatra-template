@@ -2,14 +2,23 @@
 
 require 'sinatra/base'
 
+unless ENV['RACK_ENV'] == 'production'
+  require "sinatra/reloader"
+  require 'pry'
+end
+
 class SinatraTemplate < Sinatra::Base
   enable :sessions
   set :public_folder, File.dirname(__FILE__) + '/public'
 
-  # force SSL on production
-  use Rack::SSL if ENV['RACK_ENV'] == 'production'
+  if ENV['RACK_ENV'] == 'production'
+    use Rack::SSL # force SSL
+  else
+    register Sinatra::Reloader
+    also_reload 'lib/*'
+  end
 
-  #############################################################################
+    #############################################################################
   # index page
   #############################################################################
   get '/' do

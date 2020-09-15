@@ -13,4 +13,5 @@ group :development do
   gem 'irb'
   gem 'rubocop'
   gem 'shotgun'
+  gem 'pry'
 end
